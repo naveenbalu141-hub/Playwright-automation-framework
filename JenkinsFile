@@ -1,11 +1,15 @@
+
 pipeline {
     agent any
 
-    tools {
-        nodejs 'NodeJS'
-    }
-
     stages {
+        stage('Check Node.js') {
+            steps {
+                bat 'node --version'
+                bat 'npm.cmd --version'
+            }
+        }
+
         stage('Checkout') {
             steps {
                 checkout scm
@@ -24,7 +28,7 @@ pipeline {
             }
         }
 
-        stage('Run Tests') {
+        stage('Run Playwright Tests') {
             steps {
                 bat 'npx playwright test'
             }
