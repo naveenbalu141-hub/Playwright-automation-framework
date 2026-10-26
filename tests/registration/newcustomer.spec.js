@@ -1,1 +1,1 @@
-import{test,expect} from './';
+import{test,expect} from '@playwright/test';
