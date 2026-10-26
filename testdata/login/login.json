@@ -1,0 +1,15 @@
+   [
+        
+    {
+        "status":"valid",
+        "name":"Naveen",
+        "password":"Naveen@12",
+        "email":"123@example.com"
+    },
+       {
+        "status":"invalid",
+        "name":"Kumar",
+        "password": "Kumar@12",
+        "email": "132@gmail.com"
+       } 
+   ]
